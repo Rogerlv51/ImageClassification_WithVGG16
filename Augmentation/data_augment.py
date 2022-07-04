@@ -1,8 +1,12 @@
+import imp
 from PIL import Image
 
 import numpy as np
 import torchvision
-
+import os
+import sys
+current_dir = os.path.dirname(__file__)
+sys.path.append(current_dir)
 
 class DataAugment(object):
     def __init__(self):
