@@ -74,7 +74,7 @@ if __name__ == '__main__':
     dataset = ReadYOLO(trans=data_augment)
     data = iter(DataLoader(dataset, batch_size=4, drop_last=False, collate_fn=colle))
     imgs, labels = next(data)
-    print(imgs) # [channels, w, h]
+    print(imgs.shape) # [channels, w, h]
     # plt或者opencv都要求通道数在最后一维上，所以转置一下
     cv2.imshow("img", imgs[0].permute(1,2,0).numpy())
     cv2.waitKey()
