@@ -12,7 +12,7 @@ import time
 parser = argparse.ArgumentParser(description='VGG16 Training')
 parser.add_argument("--lr", default=0.001, help="learning rate of model")  # 0.1~0.0001
 parser.add_argument('--momentum', default=0.9, type=float, help='momentum')
-parser.add_argument('--batch_size', default=32, type=int, help='batch_size')
+parser.add_argument('--batch_size', default=4, type=int, help='batch_size')
 parser.add_argument('--epochs', default=20, type=int, help='epochs')
 parser.add_argument('--weight_decay', default=5e-4, type=float, help='Weight decay for SGD')
 

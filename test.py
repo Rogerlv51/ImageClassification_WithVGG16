@@ -4,14 +4,14 @@ from model import VGG16
 
 import torchvision
 import numpy as np
-import cv2.cv2 as cv2
+import cv2
 import torch
 import argparse
 
 
 parser = argparse.ArgumentParser(description='VGG16 Testing')
-parser.add_argument("--weight_dir", default='./weights/A_Early_stop_params.pth', help="参数路径")
-parser.add_argument("--test_dir", default='./dataset/test/img/Image_21.jpg', help="测试图片路径")
+parser.add_argument("--weight_dir", default='./weights/VGG16_epoch4_params.pth', help="参数路径")
+parser.add_argument("--test_dir", default='./dataset/football/test_image/Image_3.jpg', help="测试图片路径")
 
 args = parser.parse_args()
 
