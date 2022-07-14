@@ -10,7 +10,7 @@ import argparse
 
 
 parser = argparse.ArgumentParser(description='VGG16 Testing')
-parser.add_argument("--weight_dir", default='./weights/VGG16_epoch4_params.pth', help="参数路径")
+parser.add_argument("--weight_dir", default='./weights/VGG16_epoch8_params.pth', help="参数路径")
 parser.add_argument("--test_dir", default='./dataset/football/test_image/Image_3.jpg', help="测试图片路径")
 
 args = parser.parse_args()
